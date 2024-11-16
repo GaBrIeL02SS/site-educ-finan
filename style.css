@@ -70,6 +70,12 @@ a{
     text-decoration: none;
 }
 
+strong >  a:visited{
+    color: #42C920;
+}
+
+
+
 main{
     margin: auto;
     max-width: 800px;
@@ -125,4 +131,16 @@ footer > h1{
     font-size: 1.5em;
     text-align: center;
     padding: 10px;
+}
+
+strong{
+    font-family: var(--fonte-especial);
+    color:#42C920;
+    display: inline-flex;
+    font-size: .8em;
+}
+
+strong > a{
+    text-decoration: underline;
+    font-size: 1em;
 }
