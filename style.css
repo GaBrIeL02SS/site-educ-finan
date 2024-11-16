@@ -1,0 +1,128 @@
+@charset "UTF-08";
+
+@font-face {
+    font-family:"cyber" ;
+    src: url(fontes/cyber-alert.italic.otf);
+}
+
+@font-face {
+    font-family: "especial" ;
+    src: url(fontes/minisystem.regular.otf);
+}
+
+@font-face {
+    font-family: "texto" ;
+    src: url(fontes/Exo-Regular.otfRegular.otf);
+}
+
+:root{
+    --fonte-cyber:"cyber";
+    --fonte-especial: "especial";
+    --fonte-texto:"texto";
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    border-bottom: 2px solid white;
+    box-shadow: 0px 1px 10px #42C920;
+    padding: 10px;
+}
+
+header > h1{
+    font-family:var(--fonte-cyber);
+    color:white;
+    text-shadow: #42C920 1px 5px;
+    font-size: 2em;
+    text-align: center;
+}
+
+nav > ul{
+    display: block;
+    text-align: center;
+}
+
+nav > ul > a{
+    display: inline-flex ;
+    margin: 20px;
+    text-decoration: none;
+    border: none;
+    font-size: 1em;
+    font-family: var(--fonte-cyber);
+    color: white;
+    text-shadow: #e7efe5 1px 0px 3px;
+}
+
+nav > ul > a:hover{
+    font-size: 1.2em;
+    transition-duration: .5s;
+    margin-bottom: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    margin: auto;
+    max-width: 800px;
+    color: white;
+    padding: 20px;
+}
+
+main > h1{
+    font-family: var(--fonte-cyber);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: #42C920 1px 3px;
+    font-size: 1.5em;
+}
+
+main > p{
+    font-family: var(--fonte-texto);
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.792);
+    letter-spacing: 1px;
+}
+
+main > picture{
+    display: block;
+}
+
+main > picture > img{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+}
+
+main > ul > li{
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.792);
+}
+
+main > ul > li::before{
+    content: "🟢";
+}
+
+footer{
+    border-top:2px solid white; 
+    box-shadow: 0px 1px 10px #42C920;
+}
+
+footer > h1{
+    font-family:var(--fonte-cyber);
+    color:white;
+    text-shadow: #42C920 1px 3px;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+}
